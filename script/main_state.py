@@ -24,6 +24,7 @@ class Search(smach.State):
     def __init__(self):
         smach.State.__init__(self, outcomes=["success_Search"])
 
+
     def execute(self, userdata):
         rospy.loginfo("Start Search")
         #Popen("rosrun competition_pkg follow.py", shell=True)
